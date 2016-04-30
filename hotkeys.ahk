@@ -31,3 +31,7 @@ Return
 #m::
 	WinActivate, ^iTunes$
 Return
+
+#t::
+	WinActivate, ^SourceTree$
+Return

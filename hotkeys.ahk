@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetTitleMatchMode RegEx
 
 #c::
-	if (WinExists, Google Chrome$)
+	IfWinExist, Google Chrome$
 		WinActivate, Google Chrome$
 	else
 		WinActivate, Edge$

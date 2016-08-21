@@ -3,6 +3,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetTitleMatchMode RegEx
+#WinActivateForce
+#SingleInstance
 
 #c::
 	IfWinExist, Google Chrome$
@@ -20,7 +22,7 @@ Return
 Return
 
 #r::
-	WinActivate, ^Unity
+	WinActivate, ^Unity Personal
 Return
 
 #y::
@@ -38,3 +40,22 @@ Return
 #t::
 	WinActivate, ^SourceTree$
 Return
+
+!Left::
+	SendInput {Home}
+Return
+
++!Left::
+	SendInput +{Home}
+Return
+
+!Right::
+	SendInput {End}
+Return
+
++!Right::
+	SendInput +{End}
+Return
+
+~LAlt Up:: return
+~RAlt Up:: return

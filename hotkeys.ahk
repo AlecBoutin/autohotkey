@@ -34,7 +34,7 @@ Return
 Return
 
 #m::
-	WinActivate, ^iTunes$
+	WinActivate, ^Spotify$
 Return
 
 #t::
@@ -57,5 +57,23 @@ Return
 	SendInput +{End}
 Return
 
+!Down::
+	SendInput ^{End}
+Return
+
+!Up::
+	SendInput ^{Home}
+Return
+
++!Down::
+	SendInput +^{End}
+Return
+
++!Up::
+	SendInput +^{Home}
+Return
+
 ~LAlt Up:: return
 ~RAlt Up:: return
+
+Capslock::Ctrl

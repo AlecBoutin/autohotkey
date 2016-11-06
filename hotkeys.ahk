@@ -77,3 +77,11 @@ Return
 ~RAlt Up:: return
 
 Capslock::Ctrl
+
++!}::
+	SendInput ^{Tab}
+Return
+
++!{::
+	SendInput ^+{Tab}
+Return

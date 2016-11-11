@@ -18,7 +18,7 @@ Return
 Return
 
 #d::
-	WinActivate, Visual Studio$
+	WinActivate, Visual Studio
 Return
 
 #r::
@@ -34,11 +34,15 @@ Return
 Return
 
 #m::
-	WinActivate, ^Spotify$
+	WinActivate, ahk_exe Spotify.exe
 Return
 
 #t::
 	WinActivate, ^SourceTree$
+Return
+
+#z::
+	WinActivate, ahk_exe ConEmu64.exe
 Return
 
 !Left::

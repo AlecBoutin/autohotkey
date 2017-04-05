@@ -77,6 +77,14 @@ Return
 	SendInput +^{Home}
 Return
 
+![::
+	SendInput !{Left}
+Return
+
+!]::
+	SendInput !{Right}
+Return
+
 ~LAlt Up:: return
 ~RAlt Up:: return
 

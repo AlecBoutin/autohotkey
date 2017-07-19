@@ -42,7 +42,10 @@ Return
 Return
 
 #z::
-	WinActivate, ahk_exe ConEmu64.exe
+	IfWinExist, Windows PowerShell
+		WinActivate, Windows PowerShell
+	else
+		WinActivate, ahk_exe ConEmu64.exe
 Return
 
 !Left::

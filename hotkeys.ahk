@@ -7,7 +7,9 @@ SetTitleMatchMode RegEx
 #SingleInstance
 
 #c::
-	IfWinExist, Google Chrome$
+	IfWinExist, Firefox$
+		WinActivate, Firefox$
+	else IfWinExist, Google Chrome$
 		WinActivate, Google Chrome$
 	else
 		WinActivate, Edge$
